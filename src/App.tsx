@@ -1,7 +1,8 @@
 import React from 'react';
+import Test from './Test';
 
 const App = React.memo(() =>   
-    <div>Hello world</div> 
+    <div><Test x='dasdasda' /></div> 
 );
 
 export default App;

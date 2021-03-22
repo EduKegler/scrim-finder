@@ -3,19 +3,19 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: 'development',
-    entry: './index.jsx',
+    entry: './src/index.tsx',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, '/dist')
     },
-    plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
+    plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     module: {
         rules: [
             {
-                test: /\.(ts|js)x?$/i,
+                test: /\.(js)x?$/i,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
@@ -30,7 +30,12 @@ module.exports = {
             {
                 test: /\.scss%/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
-            }
+            },
+            {
+                test: /\.(ts)x?$/i,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
         ]
     }
 }
