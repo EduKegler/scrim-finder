@@ -1,0 +1,7 @@
+.cf-button {
+    background: #0071BC;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 900;
+}

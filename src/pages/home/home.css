@@ -1,0 +1,74 @@
+.cf-home { 
+    position: relative;
+}
+
+.cf-home__title { 
+    font-size: 36px;
+}
+
+.cf-home__subtitle { 
+    font-size: 21px;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.cf-home__subtitle--with-bg { 
+    color: #00B1FF;
+}
+
+.cf-home__description {
+    font-size: 31px;
+}
+
+.cf-home__games { 
+    padding: 2rem 20rem;
+    text-align: center;
+}
+
+.cf-home__game-images { 
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cf-home__divider { 
+    margin: 4rem 0;
+}
+
+.cf-home__extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cf-home__footer { 
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%);
+}
+
+.cf-backgroud__register { 
+    background: url('./../../assets/images/bg-register.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.cf-backgroud__ranking { 
+    background: url('./../../assets/images/bg-ranking.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.cf-backgroud__help-us {
+    background: url('./../../assets/images/bg-helpus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}

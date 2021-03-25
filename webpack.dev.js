@@ -6,11 +6,15 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, '/dist')
+        path: path.resolve(__dirname, '/dist'),
+        publicPath: '/'
     },
     plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
+    },
+    devServer: {
+       historyApiFallback: true,
     },
     module: {
         rules: [
@@ -28,14 +32,20 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss%/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            { 
+                test: /\.(png|jpe?g|gif|jp2|webp|ttf)$/,
+                include: path.join(__dirname, 'src/assets'),
+                loader: 'file-loader' 
             },
             {
                 test: /\.(ts)x?$/i,
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+
         ]
     }
 }

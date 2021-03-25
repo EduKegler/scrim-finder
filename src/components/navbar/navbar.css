@@ -1,0 +1,11 @@
+.cf-navbar { 
+    height: var(--navbar-height);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cf-menu a { 
+ margin: 0 1rem;
+}
