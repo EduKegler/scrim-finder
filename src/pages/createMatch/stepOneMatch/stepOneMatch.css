@@ -1,0 +1,44 @@
+
+.cf-step-one-match__teams {
+    justify-content: center;
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.cf-step-one-match__team {
+    text-align: center;
+    width: 200px;
+    border: 1px solid #60A6D5;
+    color: black;
+    cursor: pointer;
+}
+
+.cf-step-one-match__team:hover {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.cf-step-one-match__team-image {
+    padding: 1rem;
+}
+
+.cf-step-one-match__team-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cf-step-one-match__divider {
+    background: #60A6D5;
+    height: 2px;
+    margin: 0 1rem;
+}
+
+.cf-step-one-match__team-name {
+    padding: 1rem 0;
+}
+
+.cf-step-one-match__team-not-found { 
+    color: black;
+    text-align: center;
+}

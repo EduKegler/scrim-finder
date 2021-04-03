@@ -3,12 +3,13 @@ import './button.css';
 
 interface IButton {
     children: React.ReactElement | React.ReactElement[] | string;
+    onClick?: () => void;
 }
 
 const Button = React.memo((props: IButton) => {
-    const { children } = props;
+    const { children, onClick } = props;
     return (
-        <div className='cf-button'>
+        <div className='cf-button' onClick={onClick}>
             {React.Children.map(children, e => e)}
         </div>
     );

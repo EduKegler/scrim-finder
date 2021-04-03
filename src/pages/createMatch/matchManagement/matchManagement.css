@@ -1,0 +1,10 @@
+
+.cf-match-management__title {
+    background: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.cf-match-management__bottom {
+    float: right;
+}

@@ -1,5 +1,5 @@
 .cf-button {
-    background: #0071BC;
+    background: var(--secondary-color);
     padding: 0.5rem 1rem;
     width: fit-content;
     cursor: pointer;
