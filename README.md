@@ -1,1 +1,1 @@
-# scrum-finder
+# scrim-finder
